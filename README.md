@@ -8,6 +8,14 @@ With this docker image you don't need to install the Flutter and Android SDK on 
 - [`beta`](https://github.com/matsp/docker-flutter/tree/master/beta)
 - [`dev`](https://github.com/matsp/docker-flutter/tree/master/dev)
 
+### Build for MacOs M1
+
+Executing platform to build image for MacOS M1.
+
+```shell
+docker buildx build --platform linux/amd64  -t flutter  -f  stable/Dockerfile .
+```
+
 ## Entrypoints
 
 - `flutter` (default)
